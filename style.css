@@ -38,12 +38,19 @@ body {
 }
 
 .galeria {
-    margin: 200px auto;
+    margin: auto;
     width: 240px;
     height: 427px;
     position: relative;
     overflow: hidden;
 
+}
+
+.alinhamentoImagemPhone {
+   position: fixed;
+   right: 53%;
+   left: 29.3%; 
+   
 }
 
 .foto {
@@ -58,7 +65,7 @@ body {
 
     25%{
         opacity: 1;
-        transform: scale(1.1,1.1);
+        transform: scale(1,1);
     }
 
     50%{
@@ -173,7 +180,8 @@ body {
  @media (max-width: 1024px) {
      .instagram-wrapper {
          width: 90%;         
-     }
+     }   
+     
  }
 
  @media (max-width: 650px) {
@@ -196,6 +204,10 @@ body {
 
      .group {
          border: 1px solid transparent;
+     }
+
+     .alinhamentoImagemPhone {
+        display: none;        
      }
 
  }
